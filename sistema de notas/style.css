@@ -1,0 +1,207 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa principal */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    color: #1e40af;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Formulário */
+.formulario h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    flex: 1;
+}
+
+.campo label {
+    color: #334155;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito nos campos */
+.campo input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+/* Organização das notas */
+.notas {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Botão calcular */
+#btnCalcular {
+    background-color: #2563eb;
+    color: white;
+}
+
+#btnCalcular:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Botão limpar */
+#btnLimpar {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+#btnLimpar:hover {
+    background-color: #cbd5e1;
+    transform: translateY(-3px);
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    line-height: 1.8;
+}
+
+.resultado h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.resultado p {
+    font-size: 16px;
+}
+
+/* Cores das situações */
+.aprovado {
+    display: block;
+    background-color: #dcfce7;
+    border: 1px solid #22c55e;
+    color: #166534;
+}
+
+.recuperacao {
+    display: block;
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    color: #92400e;
+}
+
+.reprovado {
+    display: block;
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+}
+
+.erro {
+    display: block;
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 550px) {
+
+    .container {
+        padding: 22px;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+    .notas {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
